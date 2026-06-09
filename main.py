@@ -6,7 +6,7 @@ window = pygame.display.set_mode(size=(600, 500))
 print('Setup End')
 
 #https://www.pygame.org/docs/ref/event.html EVENTOS PYGAME
-
+#man, this code suck 
 print('Loop Start')
 while True:
     #Check for all events
@@ -16,6 +16,6 @@ while True:
             quit() #End pygame
 
 
-
+print('asshole')
 
 
