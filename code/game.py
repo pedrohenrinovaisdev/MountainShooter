@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import pygame
-from code.menu import Menu
+from code.Menu import Menu
 from const import WIN_WIDTH, WIN_HEIGHT
 
 
