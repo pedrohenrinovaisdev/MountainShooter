@@ -4,7 +4,7 @@ import pygame
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION, COLOR_SKY, COLOR_ORANGE
+from const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION, COLOR_SKY, COLOR_ORANGE, COLOR_WHITE
 
 
 class Menu:
@@ -18,7 +18,7 @@ class Menu:
         pygame.mixer_music.play(-1)
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(50, 'Sky', COLOR_ORANGE, ((WIN_WIDTH / 2), 70))
+            self.menu_text(50, 'Sky', COLOR_WHITE, ((WIN_WIDTH / 2), 70))
             self.menu_text(50, 'Shooter', COLOR_ORANGE, ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
