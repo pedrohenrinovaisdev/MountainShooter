@@ -4,7 +4,7 @@ import pygame
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION, COLOR_SKY, COLOR_ORANGE, COLOR_WHITE, COLOR_YELLOW
+from const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION, COLOR_SKY, COLOR_ORANGE, COLOR_WHITE, COLOR_YELLOW, COLOR_GREEN
 
 
 class Menu:
@@ -22,10 +22,11 @@ class Menu:
             self.window.blit(source=self.surf, dest=self.rect)
             self.menu_text(50, 'Sky', COLOR_ORANGE, ((WIN_WIDTH / 2), 70))
             self.menu_text(50, 'Shooter', COLOR_ORANGE, ((WIN_WIDTH / 2), 120))
+            self.menu_text(20, 'WORLD CUP EDITION', COLOR_GREEN, ((WIN_WIDTH / 2), 150))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
-                    self.menu_text(20, MENU_OPTION[i], COLOR_YELLOW, ((WIN_WIDTH / 2), 200 + 25 * i))
+                    self.menu_text(20, MENU_OPTION[i], COLOR_GREEN, ((WIN_WIDTH / 2), 200 + 25 * i))
                 else:
                     self.menu_text(20, MENU_OPTION[i], COLOR_SKY, ((WIN_WIDTH / 2), 200 + 25 * i))
 
