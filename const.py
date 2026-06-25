@@ -11,26 +11,36 @@ C_RED = (255, 2, 2)
 
 #E
 ENTITY_SPEED = {
-    'c1_bg0': 0,
-    'c1_bg1': 1,
-    'c1_bg2': 2,
-    'c1_bg3': 3,
+    'Level1bg0': 0,
+    'Level1bg1': 1,
+    'Level1bg2': 2,
+    'Level1bg3': 3,
+
+    'Level2bg0': 0,
+    'Level2bg1': 1,
+    'Level2bg2': 2,
+    'Level2bg3': 3,
     'Player1': 6,
-    'Player1shot': 7,
+    'Player1shot': 5,
     'Player2': 4,
     'Player2shot': 4,
-    'Enemy1': 2,
+    'Enemy1': 3,
     'Enemy1shot': 5,
-    'Enemy2': 1,
+    'Enemy2': 2,
     'Enemy2shot': 4,
 
 }
 
 ENTITY_HEALTH ={
-    'c1_bg0': 999,
-    'c1_bg1': 999,
-    'c1_bg2': 999,
-    'c1_bg3': 999,
+    'Level1bg0': 999,
+    'Level1bg1': 999,
+    'Level1bg2': 999,
+    'Level1bg3': 999,
+
+    'Level2bg0': 999,
+    'Level2bg1': 999,
+    'Level2bg2': 999,
+    'Level2bg3': 999,
     'Player1': 300,
     'Player1shot': 1,
     'Player2': 500,
@@ -42,6 +52,7 @@ ENTITY_HEALTH ={
 }
 
 EVENT_ENEMY = pygame.USEREVENT + 1
+EVENT_TIMEOUT = pygame.USEREVENT + 2
 
 ENTITY_SHOT_DELAY = {
     'Player1': 20,
@@ -49,14 +60,18 @@ ENTITY_SHOT_DELAY = {
     'Enemy1': 60,
     'Enemy2': 90
 
-
 }
 
 ENTITY_DAMAGE = {
-    'c1_bg0': 0,
-    'c1_bg1': 0,
-    'c1_bg2': 0,
-    'c1_bg3': 0,
+    'Level1bg0': 0,
+    'Level1bg1': 0,
+    'Level1bg2': 0,
+    'Level1bg3': 0,
+
+    'Level2bg0': 0,
+    'Level2bg1': 0,
+    'Level2bg2': 0,
+    'Level2bg3': 0,
     'Player1': 1,
     'Player1shot': 30,
     'Player2': 1,
@@ -68,10 +83,15 @@ ENTITY_DAMAGE = {
 }
 
 ENTITY_SCORE = {
-    'c1_bg0': 0,
-    'c1_bg1': 0,
-    'c1_bg2': 0,
-    'c1_bg3': 0,
+    'Level1bg0': 0,
+    'Level1bg1': 0,
+    'Level1bg2': 0,
+    'Level1bg3': 0,
+
+    'Level2bg0': 0,
+    'Level2bg1': 0,
+    'Level2bg2': 0,
+    'Level2bg3': 0,
     'Player1': 1,
     'Player1shot': 0,
     'Player2': 0,
@@ -82,7 +102,8 @@ ENTITY_SCORE = {
     'Enemy2': 200,
 }
 
-#M
+
+#
 MENU_OPTION = ('NEW GAME 1P',
                'NEW GAME 2P - COOPERATIVE',
                'NEW GAME 2P - COMPETITIVE',
@@ -113,7 +134,12 @@ PLAYER_KEY_SHOT = {
 }
 
 #S
-SPAWN_TIME = 1300
+SPAWN_TIME = 1000
+
+#T
+TIMEOUT_STEP = 100
+
+TIMEOUT_LEVEL = 10000
 
 #W
 WIN_WIDTH = 576

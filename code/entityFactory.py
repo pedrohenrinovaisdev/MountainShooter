@@ -11,13 +11,19 @@ from const import WIN_WIDTH, WIN_HEIGHT
 class EntityFactory:
 
     @staticmethod
-    def get_entity(entity_name: str, position=(0,0)):
+    def get_entity(entity_name: str,):
         match entity_name:
-            case 'c1_bg':
+            case 'Level1bg':
                 list_bg = []
                 for i in range(3):
-                    list_bg.append(Background(f'c1_bg{i}', (0, 0)))
-                    list_bg.append(Background(f'c1_bg{i}', (WIN_WIDTH, 0)))
+                    list_bg.append(Background(f'Level1bg{i}', (0, 0)))
+                    list_bg.append(Background(f'Level1bg{i}', (WIN_WIDTH, 0)))
+                return list_bg
+            case 'Level2bg':
+                list_bg = []
+                for i in range(4):
+                    list_bg.append(Background(f'Level2bg{i}', (0, 0)))
+                    list_bg.append(Background(f'Level2bg{i}', (WIN_WIDTH, 0)))
                 return list_bg
             case 'Player1':
                 return Player('Player1', (10, WIN_HEIGHT / 2 - 30))
