@@ -42,9 +42,9 @@ ENTITY_HEALTH ={
     'Level2bg1': 999,
     'Level2bg2': 999,
     'Level2bg3': 999,
-    'Player1': 300,
+    'Player1': 250,
     'Player1shot': 1,
-    'Player2': 500,
+    'Player2': 400,
     'Player2shot': 1,
     'Enemy1': 50,
     'Enemy1shot': 1,
@@ -140,7 +140,7 @@ SPAWN_TIME = 1000
 #T
 TIMEOUT_STEP = 100
 
-TIMEOUT_LEVEL = 10000
+TIMEOUT_LEVEL = 30000
 
 #W
 WIN_WIDTH = 576

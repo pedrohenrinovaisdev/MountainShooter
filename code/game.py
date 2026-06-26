@@ -1,5 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import sys
+
 import pygame
 from code.menu import Menu
 from code.level import Level
@@ -35,7 +37,8 @@ class Game:
                 pygame.quit()
                 quit()
             else:
-                pass
+                pygame.quit()
+                sys.exit()
 
 
 
